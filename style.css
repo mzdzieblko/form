@@ -4,4 +4,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  color: azure;
+}
+
+.form {
+}
+
+.form__input {
+  display: block;
+  width: 100%;
 }
