@@ -10,7 +10,7 @@
   <body>
     <main>
       <h1>Form playground</h1>
-      <form class="form" action="">
+      <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
         <p>
           <label>
             Your name:
@@ -35,15 +35,115 @@
           />
         </p>
         <p>
-          <label for="phone">Your phone number:</label>
+          <label for="favoritNumber">Your favorit number:</label>
 
           <input
             class="form__input"
-            name="phone"
-            placeholder="Enter your phone number"
-            id="phone"
-            type="text"
+            name="favoritNumber"
+            placeholder="Enter your favorit number"
+            id="favoritNumber"
+            type="number"
           />
+        </p>
+        <p>
+          <label for="number">Your phone number:</label>
+
+          <input
+            class="form__input"
+            name="number"
+            placeholder="Enter your phone number"
+            id="number"
+            type="tel"
+          />
+        </p>
+        <p>
+          <label for="email">Your e-mail address:</label>
+
+          <input
+            class="form__input"
+            name="email"
+            placeholder="Enter your e-mail address"
+            id="email"
+            type="email"
+          />
+        </p>
+        <p>
+          <label for="password">Your password:</label>
+
+          <input
+            class="form__input password--js"
+            name="password"
+            placeholder="Enter your password"
+            id="password"
+            type="password"
+          />
+        </p>
+        <p>
+          <label for="range">Range</label>
+
+          <input
+            class="form__input range--js"
+            name="range"
+            id="range"
+            type="range"
+            min="0"
+            max="100"
+            step="0.5"
+          />
+        </p>
+        <fieldset>
+          <legend>
+            Address
+          </legend>
+          <p>
+            <label for="streatName">Streat name:</label>
+
+            <input
+              class="form__input"
+              name="streatName"
+              placeholder="Enter your streat name"
+              id="streatName"
+              type="text"
+            />
+          </p>
+          <p>
+            <label for="city">City:</label>
+
+            <input
+              class="form__input"
+              name="city"
+              placeholder="Enter your city"
+              id="city"
+              type="text"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favorite icecream</legend>
+          <p>
+            <label>
+              <input name="iceCream" value="Lion" type="radio" />Lion
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="iceCream" value="Oreo" type="radio" />Oreo
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="iceCream" value="Vanilia" type="radio" />Vanilia
+            </label>
+          </p>
+        </fieldset>
+        <p>
+          <label
+            ><input type="checkbox" name="agreement" value="agree" /> I
+            agree</label
+          >
+        </p>
+        <p>
+          <label><input type="submit" name="submit" value="Send me" /></label>
         </p>
       </form>
     </main>
